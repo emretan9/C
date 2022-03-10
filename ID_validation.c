@@ -27,12 +27,12 @@ int cikar=(toplam1*7)-toplam2;
 
 if(strlen(identity_number)==11){
  if(identity_number[0] == '0'){
-    printf("ID number cannot start with 0 !!");
+    printf("ID number cannot start with 0 !!!");
  }
   else if(cikar%10 != identity_number[9]-48 && (toplam1+toplam2+identity_number[9]-48)%10 != identity_number[10]-48)
       //value of digits starting with 48 at ASCII table(0 corresponds to 48)
       //To get digit that we want, we should extract from 48 which is the length of digits between ASCII value and decimal value
-     printf("invalid ID");
+     printf("Invalid ID");
     else{ 
      for(int i=0;i<=strlen(identity_number);i++){
       if(identity_number[i]>=0  &&  identity_number[i]<=9 ){
@@ -44,7 +44,7 @@ if(strlen(identity_number)==11){
 if(count==1) printf("valid ID");
 }
 else{
-    printf("invalid id number cant greater than 11");
+    printf("Invalid id number must be 11 digit");
 }
 
 }
